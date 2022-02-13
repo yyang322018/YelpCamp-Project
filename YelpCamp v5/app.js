@@ -179,6 +179,7 @@ app.get('/logout', (req, res) => {
     res.redirect('/campgrounds');
 })
 
-app.listen(3000, () => {
-    console.log('Serving on port 3000')
+//heroku port 8080
+app.listen(8080||3000, () => {
+    console.log('Serving on port ${port})
 })
